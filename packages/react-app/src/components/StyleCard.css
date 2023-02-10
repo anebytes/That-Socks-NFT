@@ -1,0 +1,12 @@
+.style-card {
+  border: none;
+}
+
+.style-card2 {
+  border-color: "blue";
+  border: solid;
+}
+
+.selected-card {
+    box-shadow: 0 0 10px #1890ff;
+  }
