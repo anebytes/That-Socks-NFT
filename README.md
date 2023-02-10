@@ -6,7 +6,7 @@ That Socks Nfts with styles on Goerli network.
 
 > Mint some socks and upgrade them to suite your style
 
-![photo_2022-12-16_13-30-57](https://user-images.githubusercontent.com/466652/208145278-3d7783d3-de17-4b55-95b6-99e40fbe8fcd.jpg)
+![Screenshot_594](https://user-images.githubusercontent.com/122118470/218184884-0a43a784-e386-4838-b815-9cc1a02eeb50.png)
 
 
 # 🏄‍♂️ Quick Start
@@ -64,7 +64,7 @@ yarn deploy
 
 ## Introduction
 
-ocks are not the most important part of our daily wardrobe, but quite often we simply need these. We had made our research and found out that some people have a hardtime finding the right socks for their everyday looks. It's for such people that we decided to share a small guide, with limited collection of "That Socks" SVG NFTs.
+Socks are not the most important part of our daily wardrobe, but quite often we simply need these. We had made our research and found out that some people have a hardtime finding the right socks for their everyday looks. It's for such people that we decided to share a small guide, with limited collection of "That Socks" SVG NFTs.
 
 
 

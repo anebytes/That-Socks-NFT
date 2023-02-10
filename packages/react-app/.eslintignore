@@ -1,5 +1,6 @@
 # folders
 build/
+git/
 node_modules/
 # files
 **/*.less
@@ -8,3 +9,4 @@ node_modules/
 **/*.json
 **/*.png
 **/*.svg
+**/*.json
