@@ -12,7 +12,6 @@ import "./Libraries/ToUint256.sol";
 import "./Libraries/TokenUriLibrary.sol";
 import "./Libraries/RandomNumber.sol";
 
-// GET LISTED ON OPENSEA: https://testnets.opensea.io/get-listed/step-two
 
 contract ThatSocks is ERC721Enumerable, IERC721Receiver {
     struct upgradeIds {

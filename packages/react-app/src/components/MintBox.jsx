@@ -39,6 +39,11 @@ const MintBox = ({ writeContracts, readContracts, localProviderPollingTime, tx }
     }
   };
 
+  const getMintFee = async () => {
+    const price = await readContracts[selectedContractName]?.price();
+    return price;
+  };
+
   if (thatSocksContract && !selectedContract && price) {
     setSelectedContract(thatSocksContract);
     setSelectedContractName("ThatSocks");
@@ -93,7 +98,7 @@ const MintBox = ({ writeContracts, readContracts, localProviderPollingTime, tx }
       setRefreshCanvas(!refreshCanvas);
     }
     try {
-      const mintTx = await tx(writeContracts[selectedContractName].mintItem({ value: mintPrice, gasLimit: 300000 }));
+      const mintTx = await tx(writeContracts[selectedContractName].mintItem({ value: getMintFee(), gasLimit: 300000 }));
       const receipt = await mintTx.wait();
       const recentMintId = receipt.events[0].args[2].toNumber();
       setRecentlyListedImage(recentMintId);
@@ -211,7 +216,7 @@ const MintBox = ({ writeContracts, readContracts, localProviderPollingTime, tx }
                 height: "100%",
                 width: "100%",
                 backgroundColor: "transparent",
-                cursor: `url(coin.svg), auto`,
+                cursor: "url(coin.svg) 25 25, pointer",
                 position: "absolute",
                 top: 0,
                 left: 0,

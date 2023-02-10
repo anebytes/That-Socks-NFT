@@ -1,18 +1,19 @@
-# 🏗 scaffold-eth - OptimisticLoogies V2
+# 🧦 That Socks NFTs
 
-https://optimistic.loogies.io/
+https://thatsocks-nft.surge.sh/
 
-Loogies with a smile on Optimism network.
+That Socks Nfts with styles on Goerli network.
+
+> Mint some socks and upgrade them to suite your style
 
 ![photo_2022-12-16_13-30-57](https://user-images.githubusercontent.com/466652/208145278-3d7783d3-de17-4b55-95b6-99e40fbe8fcd.jpg)
 
-Original Demo Video: https://youtu.be/PiwJsoURECg?t=542
 
 # 🏄‍♂️ Quick Start
 
 ## Prerequisites
 
-This branch is an extension of [loogie-svg-nft](https://github.com/scaffold-eth/scaffold-eth/tree/loogies-svg-nft) branch (watch its [demo](https://www.youtube.com/watch?v=m0bwE5UelEo) to understand more about it).
+This project is built with [scaffold-eth](https://github.com/scaffold-eth/scaffold-eth).
 
 [Node](https://nodejs.org/en/download/) plus [Yarn](https://classic.yarnpkg.com/en/docs/install/) and [Git](https://git-scm.com/downloads)
 
@@ -22,16 +23,16 @@ This branch is an extension of [loogie-svg-nft](https://github.com/scaffold-eth/
 
 ### Manual setup
 
-> clone/fork 🏗 scaffold-eth optimistic-loogies-master branch:
+> clone/fork 🏗 that socks nft:
 
 ```
-git clone -b optimistic-loogies-master https://github.com/scaffold-eth/scaffold-eth.git optimistic-loogies-master
-```
+git clone https://github.com/yandmch/That-Socks-NFT.git
+
 
 > install and start your 👷‍ Hardhat chain:
 
 ```bash
-cd optimistic-loogies-master
+cd that-socks-nft
 yarn install
 yarn chain
 ```
@@ -39,14 +40,14 @@ yarn chain
 > in a second terminal window, start your 📱 frontend:
 
 ```bash
-cd optimistic-loogies-master
+cd that-socks-nft
 yarn start
 ```
 
 > in a third terminal window, 🛰 deploy your contract:
 
 ```bash
-cd optimistic-loogies-master
+cd that-socks-nft
 yarn deploy
 ```
 
@@ -63,9 +64,11 @@ yarn deploy
 
 ## Introduction
 
-This branch shows how to set up an SVG NFT contract so that other NFTs can use it in their SVG code. This leads to an easy composition of SVG NFTs.
+ocks are not the most important part of our daily wardrobe, but quite often we simply need these. We had made our research and found out that some people have a hardtime finding the right socks for their everyday looks. It's for such people that we decided to share a small guide, with limited collection of "That Socks" SVG NFTs.
 
-Take a look at `Loogies.sol` at `packages/hardhat/contracts`. It describes an SVG NFT that is defined by two parameters: `color` and `chubbiness` randomly generated at mint. It exposes a function:
+
+
+Take a look at `ThatSocks.sol` at `packages/hardhat/contracts`. It describes an SVG NFT that is upgradeable by other nfts in their seperate contracts: NFT features are randomly generated at mint and rendered on-chain. It exposes a function:
 ```
 function renderTokenById(uint256 id) public view returns (string memory)
 ```
@@ -76,7 +79,7 @@ It returns the relevant SVG that be embedded in other SVG code for rendering.
 
 To deploy this project to Gitpod, click this button:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/scaffold-eth/scaffold-eth/tree/fancy-loogies)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/yandmch/That-Socks-NFT.git)
 
 # 📚 Documentation
 
